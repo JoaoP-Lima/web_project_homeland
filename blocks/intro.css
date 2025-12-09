@@ -1,0 +1,40 @@
+.intro {
+  max-width: 51.875rem;
+}
+
+.intro__title {
+  font-size: 3.375rem;
+  font-weight: 900;
+  line-height: 1.074;
+  margin-bottom: 2.5rem;
+  margin-top: 5.75rem;
+}
+
+.intro__text-quote {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.417;
+  margin: 0;
+  max-width: 46.125rem;
+}
+
+.intro__text-quote p {
+  margin-bottom: 0.625rem;
+}
+
+.intro__author {
+  display: block;
+  text-align: right;
+  max-width: 43.75rem;
+  line-height: 1.417;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.intro__text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.63;
+  max-width: 45.125rem;
+}

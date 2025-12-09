@@ -1,0 +1,12 @@
+.logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 5.625rem;
+}
+
+.logo__image {
+  width: 15.875rem;
+  height: 4.375rem;
+}
