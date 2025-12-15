@@ -1,5 +1,8 @@
 .intro {
-  max-width: 51.875rem;
+  margin-top: 5.75rem;
+  margin-right: 154px;
+  width: 830px;
+  align-self: flex-start;
 }
 
 .intro__title {
@@ -7,7 +10,6 @@
   font-weight: 900;
   line-height: 1.074;
   margin-bottom: 2.5rem;
-  margin-top: 5.75rem;
 }
 
 .intro__text-quote {
@@ -15,7 +17,6 @@
   font-size: 1.5rem;
   line-height: 1.417;
   margin: 0;
-  max-width: 46.125rem;
 }
 
 .intro__text-quote p {
@@ -25,16 +26,15 @@
 .intro__author {
   display: block;
   text-align: right;
-  max-width: 43.75rem;
   line-height: 1.417;
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 2rem;
+  max-width: 732px;
 }
 
 .intro__text {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.63;
-  max-width: 45.125rem;
 }
