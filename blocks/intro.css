@@ -1,7 +1,8 @@
 .intro {
   margin-top: 5.75rem;
   margin-right: 154px;
-  width: 830px;
+  max-width: 830px;
+  width: 100%;
   align-self: flex-start;
 }
 
@@ -31,6 +32,7 @@
   font-weight: 400;
   margin-bottom: 2rem;
   max-width: 732px;
+  width: 100%;
 }
 
 .intro__text {
