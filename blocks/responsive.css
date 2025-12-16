@@ -33,6 +33,10 @@
     padding: 1.875rem 0 1.5rem 0;
   }
 
+  .header {
+    padding: 0;
+  }
+
   .header__title {
     font-size: 4.6875rem;
     line-height: 1.053;
@@ -45,12 +49,19 @@
 
   .intro {
     max-width: 45rem;
-    margin: 0 auto;
+    margin: 90px auto 0 auto;
   }
 
   .intro__title {
     font-size: 2.8125rem;
     line-height: 1.088;
+  }
+
+  .photo-grid {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    padding: 0;
+    margin: 64px 24px 88px 24px;
   }
 }
 
@@ -215,6 +226,10 @@
     padding: 1.25rem 0 1.5rem 0;
   }
 
+  .header {
+    padding: 0;
+  }
+
   .logo__image {
     width: 11.75rem;
     height: 3.25rem;
@@ -256,5 +271,11 @@
   .intro__author {
     font-size: 1.2rem;
     line-height: 1.416;
+  }
+  .photo-grid {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(8, auto);
+    padding: 0;
+    margin: 48px 16px 88px 16px;
   }
 }
