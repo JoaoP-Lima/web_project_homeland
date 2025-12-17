@@ -1,0 +1,37 @@
+.places {
+  padding: 0 9.25rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "title title title title"
+    "image image website website"
+    "image image texts texts"
+    "button button texts texts";
+}
+.places__title {
+  grid-area: title;
+  font-family: "Inter" sans-serif;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+}
+.places__image {
+  grid-area: image;
+  width: 100%;
+  max-height: 460px;
+  max-width: 460px;
+}
+
+.places__website {
+  grid-area: website;
+}
+
+.places__texts {
+  grid-area: texts;
+  font-family: "Inter", sans-serif;
+font-weight: 400;
+font-size: 18px;
+line-height: 163%;
+
+}
