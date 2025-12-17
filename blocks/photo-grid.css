@@ -3,8 +3,8 @@
   grid-template-columns: repeat(4, auto);
   grid-template-rows: repeat(2, auto);
   gap: 1rem;
-  padding: 0 48px;
-  margin: 118px 0 92px 0;
+  padding: 0 3rem;
+  margin: 7.375rem 0 5.75rem 0;
 }
 
 .photo-grid__item {
