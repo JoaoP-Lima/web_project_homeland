@@ -1,13 +1,15 @@
 .places {
   padding: 0 9.25rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 3fr) 1fr;
   grid-template-areas:
-    "title title title title"
-    "image image website website"
-    "image image texts texts"
-    "button button texts texts";
+    "title title  . . . ."
+    "title title gales website website website"
+    "image image image texts texts texts"
+    "image image image texts texts texts"
+    "image image image texts texts texts"
+    "button button . . . .";
 }
 .places__title {
   grid-area: title;
@@ -27,11 +29,18 @@
   grid-area: website;
 }
 
+.places__button {
+  grid-area: button;
+}
+
 .places__texts {
   grid-area: texts;
   font-family: "Inter", sans-serif;
-font-weight: 400;
-font-size: 18px;
-line-height: 163%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+}
 
+.places span {
+  grid-area: gales;
 }
