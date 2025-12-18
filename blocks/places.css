@@ -1,40 +1,61 @@
 .places {
   padding: 0 9.25rem;
+}
+
+.place:nth-of-type(1) {
   display: grid;
+  margin-bottom: 80px;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(5, 3fr) 1fr 1fr;
+  grid-template-rows: 5fr 1fr 3fr 3fr 2fr 1fr 1fr;
   grid-template-areas:
-    "title title  . . . . . ."
-    "title title gales . website website website website"
+    "title title . . website website website website"
+    "gales . . . . . . ."
     "image image image image texts texts texts texts"
     "image image image image texts texts texts texts"
     "image image image image texts texts texts texts"
     " . . . . texts texts texts texts"
     "button button button . . . . .";
 }
-.places__title {
+
+.place.place:nth-of-type(2) {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 3fr 1fr 3fr 3fr 2fr 1fr 1fr;
+  grid-template-areas:
+    "title title  title title website website website website "
+    ". . . . . . . ."
+    "image image image image texts texts texts texts"
+    "image image image image texts texts texts texts"
+    "image image image image texts texts texts texts"
+    " . . . . texts texts texts texts"
+    "button button button . . . . .";
+}
+
+.place__title {
   grid-area: title;
   font-family: "Inter" sans-serif;
   font-weight: 900;
   font-size: 72px;
   line-height: 76px;
+  align-self: end;
 }
-.places__image {
+.place__image {
   grid-area: image;
   width: 100%;
   max-height: 460px;
   max-width: 460px;
 }
 
-.places__text:nth-of-type(1) {
+.place__text:nth-of-type(1) {
   margin-bottom: 25px;
 }
 
-.places__website {
+.place__website {
   grid-area: website;
+  align-self: end;
 }
 
-.places__website__url-heading {
+.place__website__url-heading {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -45,12 +66,12 @@
   margin-bottom: 8px;
 }
 
-.places__website__url-list {
+.place__website__url-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.places__website__url-link {
+.place__website__url-link {
   text-decoration: none;
   color: #ffffff;
   font-family: "Inter", sans-serif;
@@ -60,7 +81,7 @@
   letter-spacing: 0%;
 }
 
-.places__button {
+.place__button {
   grid-area: button;
   background-image: linear-gradient(60deg, #0278fe, #003a7b);
   color: #ffffff;
@@ -70,9 +91,17 @@
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 0%;
+  opacity: 1;
+  transition: all 0.6s ease;
+  cursor: pointer;
 }
 
-.places__texts {
+.place__button:hover {
+  background-image: linear-gradient(30deg, #003a7b 100%, #0278fe);
+  opacity: 0.75;
+}
+
+.place__texts {
   grid-area: texts;
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -80,6 +109,6 @@
   line-height: 163%;
 }
 
-.places span {
+.place span {
   grid-area: gales;
 }
