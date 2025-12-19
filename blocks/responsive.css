@@ -133,6 +133,18 @@
     padding: 0;
     margin: 4rem 1.5rem 5.5rem 1.5rem;
   }
+
+  .places {
+    padding: 0 24px;
+  }
+
+  .place__title {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 46px;
+    letter-spacing: 0%;
+  }
 }
 
 @media screen and (min-width: 546px) and (max-width: 664px) {

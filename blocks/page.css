@@ -10,7 +10,7 @@ p {
 
 .page {
   background-color: #2a2c2f;
-  max-width: 80rem;
+  /* max-width: 80rem;  */
   margin: 0 auto;
   color: #ffffff;
   padding: 2rem 0;
