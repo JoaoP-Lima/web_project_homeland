@@ -3,15 +3,13 @@
 }
 
 .place {
-}
-
-.place:nth-of-type(1) {
   display: grid;
   margin-bottom: 80px;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto auto 1fr;
   row-gap: 48px;
   column-gap: 40px;
+
+  grid-template-columns: minmax(0, 460px) auto;
+  grid-template-rows: auto auto 1fr;
 
   grid-template-areas:
     "title website"
@@ -19,58 +17,29 @@
     "button texts";
 }
 
-.place:nth-of-type(2) {
-  display: grid;
-  margin-bottom: 80px;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto auto 1fr;
-  row-gap: 48px;
-  column-gap: 40px;
-  grid-template-areas:
-    "title website"
-    "image texts"
-    "button texts";
+.place > * {
+  min-width: 0;
 }
 
-.place:nth-of-type(3) {
-  display: grid;
-  margin-bottom: 80px;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto auto 1fr;
-  row-gap: 48px;
-  column-gap: 40px;
-  grid-template-areas:
-    "title website"
-    "image texts"
-    "button texts";
-}
-
-.place:nth-of-type(4) {
-  display: grid;
-  margin-bottom: 80px;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto auto 1fr;
-  row-gap: 48px;
-  column-gap: 40px;
-  grid-template-areas:
-    "title website"
-    "image texts"
-    "button texts";
+.place__texts,
+.place__website {
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .place__title {
   grid-area: title;
   font-family: "Inter", sans-serif;
   font-weight: 900;
-  font-size: 72px;
-  line-height: 76px;
-  align-self: end;
+  font-size: clamp(2rem, 6vw, 6rem);
+  line-height: clamp(35px, 5vw, 76px);
 }
 .place__image {
   grid-area: image;
-  max-width: 100%;
   width: 100%;
-  height: 460px;
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
 }
 
 .place__text:nth-of-type(1) {
@@ -85,9 +54,9 @@
 .place__website__url-heading {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 100%;
-  letter-spacing: 12%;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  line-height: 1.2;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #aaaaaa;
   margin-bottom: 8px;
@@ -123,7 +92,7 @@
   cursor: pointer;
   width: max-content;
   height: max-content;
-  padding: 13px 21px;
+  padding: 13px 20px;
   max-width: 100%;
 }
 

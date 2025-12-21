@@ -1,27 +1,26 @@
 .intro {
-  margin-top: 5.75rem;
-  margin-right: 9.625rem;
-  max-width: 51.875rem;
-  width: 100%;
+  margin-top: clamp(64px, 5vw, 92px);
+  margin-right: clamp(16px, 12vw, 154px);
+
   align-self: flex-start;
 }
 
 .intro__title {
-  font-size: 3.375rem;
+  font-size: clamp(2rem, 4.219vw, 6rem);
   font-weight: 900;
   line-height: 1.074;
   margin-bottom: 2.5rem;
 }
-
 .intro__text-quote {
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.417;
   margin: 0;
 }
 
 .intro__text-quote p {
   margin-bottom: 0.625rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.417;
+  margin: 0;
 }
 
 .intro__author {
@@ -29,6 +28,7 @@
   text-align: right;
   line-height: 1.417;
   font-size: 1.5rem;
+
   font-weight: 400;
   margin-bottom: 2rem;
   max-width: 45.75rem;

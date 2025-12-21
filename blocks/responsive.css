@@ -1,41 +1,3 @@
-@media screen and (min-width: 1281px) and (max-width: 1500px) {
-  .page {
-    padding: 2rem 0;
-    max-width: 100%;
-  }
-
-  .header {
-    padding: 0 4.5rem;
-  }
-  .header__image {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
-  .page {
-    padding: 2rem 0rem;
-  }
-
-  .header {
-    padding: 0 3rem;
-  }
-
-  .header__title {
-    font-size: 5rem;
-    line-height: 1.05;
-  }
-
-  .header__subtitle {
-    font-size: 1.75rem;
-    line-height: 1.285;
-  }
-
-  .intro__title {
-    font-size: 3rem;
-    line-height: 1.083;
-  }
-}
 @media screen and (max-width: 1024px) {
   .page {
     padding: 2rem 0;
@@ -45,56 +7,11 @@
     padding: 0 2rem;
   }
 
-  .header__title {
-    font-size: 4.5rem;
-    line-height: 1.055;
-  }
-
-  .header__subtitle {
-    font-size: 1.5rem;
-    line-height: 1.333;
-  }
-
-  .intro__title {
-    font-size: 2.75rem;
-    line-height: 1.09;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 999px) {
-  .page {
-    padding: 1.875rem 0 1.5rem 0;
-  }
-
-  .header {
-    padding: 0 1.5rem;
-  }
-
-  .header__title {
-    font-size: 4.6875rem;
-    line-height: 1.053;
-    max-width: 90%;
-  }
-
-  .header__image {
-    width: 100%;
-  }
-
-  .intro {
-    max-width: 50rem;
-    margin: 90px auto 0 auto;
-  }
-
-  .intro__title {
-    font-size: 2.8125rem;
-    line-height: 1.088;
-  }
-
   .photo-grid {
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(4, auto);
-    padding: 0;
-    margin: 4rem 1.5rem 5.5rem 1.5rem;
+    padding: 0 1rem;
+  }
+  .places {
+    padding: 0 2rem;
   }
 }
 
@@ -104,13 +21,15 @@
   }
 
   .header {
-    padding: 0 1.5rem;
+    padding: 0;
+  }
+
+  .intro {
+    padding: 0 24px;
   }
 
   .header__title {
-    font-size: 4.6875rem;
-    line-height: 1.053;
-    max-width: 90%;
+    max-width: 70%;
   }
 
   .header__image {
@@ -118,13 +37,7 @@
   }
 
   .intro {
-    max-width: 45rem;
-    margin: 90px auto 0 auto;
-  }
-
-  .intro__title {
-    font-size: 2.8125rem;
-    line-height: 1.088;
+    margin: 5.625rem auto 0 auto;
   }
 
   .photo-grid {
@@ -138,158 +51,36 @@
     padding: 0 24px;
   }
 
-  .place__title {
-    font-family: "Inter", sans-serif;
-    font-weight: 900;
-    font-size: 42px;
-    line-height: 46px;
-    letter-spacing: 0%;
-  }
-}
-
-@media screen and (min-width: 546px) and (max-width: 664px) {
-  .page {
-    padding: 1.75rem 0 1.5rem 0;
+  .place {
+    column-gap: 28px;
   }
 
-  .header {
-    padding: 0 1.5rem;
-  }
-
-  .logo {
-    margin-bottom: 4rem;
-  }
-
-  .logo__image {
-    width: 12.5rem;
-  }
-
-  .header__title {
-    font-size: 3.5rem;
-    line-height: 1.114;
-    margin-bottom: 1.5rem;
-  }
-
-  .header__subtitle {
-    font-size: 1.25rem;
-    line-height: 1.4;
-    margin-bottom: 2rem;
-  }
-
-  .intro__title {
-    font-size: 2.5rem;
-    line-height: 1.1;
-    margin-top: 4rem;
-  }
-}
-
-@media screen and (min-width: 426px) and (max-width: 544px) {
-  .page {
-    padding: 1.5rem 0 1.5rem 0;
-  }
-  .header {
-    padding: 0;
-  }
-
-  .logo {
-    margin-bottom: 3rem;
-  }
-  .logo__image {
-    width: 11.75rem;
-    height: 3.25rem;
-  }
-
-  .logo__image {
-    width: 10rem;
-  }
-
-  .header__title {
-    font-size: 2.5rem;
-    line-height: 1.1;
-    margin-bottom: 1.5rem;
-  }
-
-  .header__subtitle {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 2rem;
-  }
-  .intro {
-    margin: 0 auto;
-    max-width: 26rem;
-  }
-
-  .intro__title {
-    font-size: 2rem;
-    line-height: 1.125;
-    margin-top: 3rem;
-  }
-
-  .intro__text-quote {
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
-
-  .intro__author {
-    font-size: 1.25rem;
-    line-height: 1.5;
-  }
-
-  .intro__text {
-    font-size: 1rem;
-  }
-
-  .footer__copyright {
-    font-size: 0.875rem;
-  }
-
-  .photo-grid {
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(8, auto);
-    padding: 0;
-    margin: 3rem 1rem 5.5rem 1rem;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .page {
-    padding: 1.25rem 0 1.5rem 0;
-  }
-
-  .header {
-    padding: 0;
-  }
-
-  .logo__image {
-    width: 11.75rem;
-    height: 3.25rem;
-  }
-
-  .header__title {
-    font-size: 2.5rem;
-    line-height: 1.1;
-    max-width: 80%;
-  }
-
-  .header__subtitle {
-    font-size: 1rem;
-    line-height: 1.25;
-    max-width: 90%;
-  }
-
-  .header__image {
+  .place__button {
+    font-size: 16px;
     width: 100%;
   }
+}
 
-  .intro {
-    max-width: 23rem;
+@media screen and (max-width: 730px) {
+  .place {
+    display: grid;
+    margin-bottom: 50px;
+    row-gap: 30px;
+
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "website"
+      "image"
+      "texts"
+      "button";
+  }
+
+  .place__title {
     margin: 0 auto;
   }
-  .photo-grid {
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(8, auto);
-    padding: 0;
-    margin: 3rem 1rem 5.5rem 1rem;
+  .place__website {
+    margin: 0 auto;
   }
 }
 
@@ -302,20 +93,11 @@
     padding: 0;
   }
 
-  .logo__image {
-    width: 11.75rem;
-    height: 3.25rem;
-  }
-
-  .header__title {
-    font-size: 2.5rem;
-    line-height: 1.1;
-    max-width: 80%;
+  .intro {
+    padding: 0 16px;
   }
 
   .header__subtitle {
-    font-size: 1rem;
-    line-height: 1.25;
     max-width: 90%;
   }
 
@@ -324,82 +106,40 @@
   }
 
   .intro {
-    max-width: 20rem;
     margin: 4rem auto 0 auto;
   }
-  .intro__title {
-    font-size: 2.1rem;
-    line-height: 1.09;
-    font-weight: 900;
-  }
-  .intro__text-quote {
-    font-size: 1.3rem;
-    line-height: 1.25;
-    font-weight: 400;
-  }
+
   .photo-grid {
     grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(8, auto);
     padding: 0;
     margin: 3rem 1rem 5.5rem 1rem;
   }
-}
 
-@media screen and (max-width: 320px) {
-  .page {
-    padding: 1.25rem 0 1.5rem 0;
+  .place {
+    display: grid;
+    margin-bottom: 50px;
+    row-gap: 30px;
+
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "website"
+      "image"
+      "texts"
+      "button";
   }
 
-  .header {
-    padding: 0;
+  .place__image {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    max-width: none;
   }
 
-  .logo__image {
-    width: 11.75rem;
-    height: 3.25rem;
-  }
-
-  .header__title {
-    font-size: 2.5rem;
-    line-height: 1.1;
-    max-width: 90%;
-  }
-
-  .header__subtitle {
-    font-size: 1rem;
-    line-height: 1.25;
-    max-width: 90%;
-  }
-
-  .header__image {
-    width: 100%;
-  }
-
-  .intro {
-    max-width: 18rem;
-    margin: 4rem auto 0 auto;
-  }
-
-  .intro__title {
-    font-size: 2rem;
-    line-height: 1.09;
-    font-weight: 900;
-  }
-
-  .intro__text-quote {
-    font-size: 1.2rem;
-    line-height: 1.25;
-    font-weight: 400;
-  }
-
-  .intro__author {
-    font-size: 1.2rem;
-    line-height: 1.416;
-  }
-  .photo-grid {
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(8, auto);
-    padding: 0;
-    margin: 3rem 1rem 5.5rem 1rem;
+  .place__button {
+    font-weight: 600;
+    font-size: 14px;
+    padding: 15px 0;
+    line-height: 100%;
   }
 }
