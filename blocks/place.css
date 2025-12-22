@@ -51,7 +51,7 @@
   align-self: end;
 }
 
-.place__website__url-heading {
+.place__url-heading {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: clamp(0.8rem, 1.5vw, 1rem);
@@ -62,12 +62,12 @@
   margin-bottom: 8px;
 }
 
-.place__website__url-list {
+.place__url-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.place__website__url-link {
+.place__url-link {
   text-decoration: none;
   color: #ffffff;
   font-family: "Inter", sans-serif;
