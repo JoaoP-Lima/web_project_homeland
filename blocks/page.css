@@ -16,3 +16,21 @@ p {
   padding: 2rem 0;
   font-family: "Inter", sans-serif;
 }
+
+@media screen and (max-width: 1024px) {
+  .page {
+    padding: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page {
+    padding: 1.875rem 0 1.5rem 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .page {
+    padding: 1.25rem 0 1.5rem 0;
+  }
+}
